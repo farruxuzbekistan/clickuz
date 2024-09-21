@@ -1,0 +1,218 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* General Mobile (below 768px) */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .pricing-head_before {
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+
+  .pricing-plan_first,
+  .pricing-plan_last {
+    width: 100%; /* Stack pricing plans vertically */
+    margin-bottom: 20px;
+  }
+
+  .pricing-plan_first {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .pricing-head_btn {
+    font-size: 14px;
+  }
+
+  .pricing-head_before h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .pricing-bg img {
+    display: none; /* Hide background for mobile for better readability */
+  }
+
+  .g4 {
+    height: 200px; /* Adjust plan box height for mobile */
+  }
+
+  .scroll-hide {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Tablet (between 769px and 1024px) */
+@media (max-width: 1024px) {
+  .pricing-head_before {
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+
+  .pricing-plan_first,
+  .pricing-plan_last {
+    width: 48%; /* Two columns for pricing plans */
+    margin-bottom: 20px;
+  }
+
+  .pricing-head_btn {
+    font-size: 16px;
+  }
+
+  .pricing-head_before h3 {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+
+  .pricing-bg img {
+    width: 70%;
+  }
+
+  .scroll-hide {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .g4 {
+    height: 250px;
+  }
+}
+
+/* Large screens (above 1024px) */
+@media (min-width: 1025px) {
+  .pricing-plan_first,
+  .pricing-plan_last {
+    width: calc(33.33% - 10px); /* Three columns for pricing plans */
+  }
+
+  .pricing-head_before h3 {
+    font-size: 36px;
+  }
+
+  .g4 {
+    height: 300px;
+  }
+}
+
+/* Default for larger screens */
+footer {
+  padding: 40px;
+
+  color: white;
+}
+
+footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .container div {
+  width: 20%;
+  padding: 10px;
+}
+
+/* Media query for tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  footer .container div {
+    width: 40%; /* Adjust columns to take more space on smaller screens */
+  }
+
+  footer .container {
+    justify-content: space-around;
+  }
+}
+
+/* Media query for smartphones (max-width: 768px) */
+@media (max-width: 768px) {
+  footer .container div {
+    width: 100%; /* Stack the columns vertically */
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  footer .container {
+    flex-direction: column; /* Stack the sections */
+    align-items: center;
+  }
+
+  footer img {
+    margin-bottom: 20px; /* Add some space below the logo */
+  }
+
+  footer .container ul {
+    padding-left: 0;
+  }
+
+  footer ul li {
+    list-style: none; /* Remove list bullets */
+  }
+
+  footer .container p {
+    text-align: center; /* Center the text */
+  }
+}
+
+/* Media query for extra small devices (max-width: 480px) */
+@media (max-width: 480px) {
+  footer {
+    padding: 20px;
+  }
+
+  footer .container {
+    padding: 0 10px;
+  }
+
+  footer .container div {
+    width: 100%;
+    padding: 5px 0;
+  }
+
+  footer img {
+    width: 70px; /* Adjust the logo size for small screens */
+  }
+}
